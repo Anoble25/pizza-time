@@ -1,0 +1,40 @@
+html{
+  text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000;
+  color:white;
+}
+
+
+
+.jumbotron{
+  background-image: url("../img/backgroundSlice.jpg");
+  color:white;
+  text-align:center;
+  background-size:cover;
+  background-position: center center;
+  background-attachment: fixed;
+  text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000;
+  max-height: 190px;
+}
+body{
+  color:white;
+  background-image: url("../img/bodyBackground.jpg");
+  background-size:cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+#addToCart{
+  color:black;
+}
+li{
+  float:left;
+  padding-left:30px;
+  padding-bottom:30px;
+  border-spacing: 10px;
+  border: 1px solid black;
+  background: rgba(51, 102, 255, 0.3);
+}
+ul{
+  list-style: none;
+
+}

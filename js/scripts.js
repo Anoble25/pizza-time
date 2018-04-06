@@ -10,17 +10,20 @@ function buildPizza(){
   var toppings = [];
   var size=$('#size').val();
 
+// function setCartTotal(){
+//
+// }
 //Justin please don't copy my code
 
 Pizza.prototype.setCost = function() {
   cost=0;
-  if (this.size==="small"){
+  if (this.size==="Small"){
     cost=8;
-  } else if (this.size==="medium"){
+  } else if (this.size==="Medium"){
     cost=12;
-  } else if (this.size==="large"){
+  } else if (this.size==="Large"){
     cost=14;
-  } else if (this.size==="extraLarge"){
+  } else if (this.size==="Extra Large"){
     cost=16;
   } else{
     console.log("pizza size error");
@@ -56,8 +59,7 @@ $(document).ready(function() {
       //  $("#pizzaNumber").append(pizzaNumber);
         $("#cartDisplay").append("<li>Pizza "+pizzaNumber+"<br>Size: "+item.size+"<br>Toppings:"+item.toppings+ "<br>Cost: $"+item.cost+"</li>");
         pizzaNumber++;
-
-
+        // setCartTotal();
       });
 
     });

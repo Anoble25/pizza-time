@@ -11,35 +11,42 @@
 </head>
 <body>
   <div class="jumbotron">
-    <h2>Pizza Time</h2>
-    <h5>You want a pizza, right? What kind?</h4>
+    <h1>Pizza Time</h2>
+    <h3>You want a pizza, right?</h4>
     </div>
-    <form id="orderForm">
-      <h3>Choose pizza size: </h3>
-      <select id="size" class="form-control form-control-sm">
-        <option value="">Select size</option>
-        <option value="Small">Small ($8)</option>
-        <option value="Medium">Medium ($12)</option>
-        <option value="Large">Large ($14)</option>
-        <option value="Extra Large">Extra Large ($16)</option>
-      </select>
-      <div class="form-check">
-        <h3>Choose toppings: (+$1 for each topping)</h3>
-        <input type="checkbox" class="form-check-input" name="toppings" value=" Pepperoni">
-        <label class="form-check-label" for="exampleCheck1">Pepperoni </label>
-        <input type="checkbox" class="form-check-input" name="toppings" value=" Pineapple">
-        <label class="form-check-label" for="exampleCheck1">Pineapple </label>
-        <input type="checkbox" class="form-check-input" name="toppings" value=" Sausage">
-        <label class="form-check-label" for="exampleCheck1">Sausage </label>
-        <input type="checkbox" class="form-check-input" name="toppings" value=" Extra Cheese">
-        <label class="form-check-label" for="exampleCheck1">Extra Cheese </label>
-      </div>
 
-      <button id="addToCart" type="submit" class = "btn-xl" name="button">Add to cart</button>
-    </form>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <form id="orderForm">
+            <h3>Choose pizza size: </h3>
+            <select id="size" class="form-control form-control-sm">
+              <option value="">Select size</option>
+              <option value="Small">Small ($8)</option>
+              <option value="Medium">Medium ($12)</option>
+              <option value="Large">Large ($14)</option>
+              <option value="Extra Large">Extra Large ($16)</option>
+            </select>
+            <div class="form-check">
+              <h3>Choose toppings: (+$1 for each topping)</h3>
+              <input type="checkbox" class="form-check-input" name="toppings" value=" Pepperoni">
+              <label class="form-check-label" for="exampleCheck1">Pepperoni </label>
+              <input type="checkbox" class="form-check-input" name="toppings" value=" Pineapple">
+              <label class="form-check-label" for="exampleCheck1">Pineapple </label>
+              <input type="checkbox" class="form-check-input" name="toppings" value=" Sausage">
+              <label class="form-check-label" for="exampleCheck1">Sausage </label>
+              <input type="checkbox" class="form-check-input" name="toppings" value=" Extra Cheese">
+              <label class="form-check-label" for="exampleCheck1">Extra Cheese </label>
+            </div>
 
-    <h2> Cart </h2>
-    <ul id="cartDisplay"></ul>
+            <button id="addToCart" type="submit" class = "btn-xl" name="button">Add to cart</button>
+          </form>
+        </div>
 
+        <div class="col-md-8">
+          <h2> Cart </h2>
+          <ul id="cartDisplay"></ul>
+        </div>
+    </div>
   </body>
 </html>
