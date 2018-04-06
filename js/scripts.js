@@ -6,13 +6,13 @@ function Pizza (size, toppings){
   this.cost=0;
 }
 
-function buildPizza(){
-  var toppings = [];
-  var size=$('#size').val();
-
-// function setCartTotal(){
-//
-// }
+function showCost(){
+  var runningTotal=0;
+  cart.forEach(function(item){
+    runningTotal=runningTotal+item.cost;
+  });
+  $("#cartTotal").text(runningTotal);
+}
 //Justin please don't copy my code
 
 Pizza.prototype.setCost = function() {
@@ -34,6 +34,9 @@ Pizza.prototype.setCost = function() {
   });
   this.cost=cost;
 }
+function buildPizza(){
+  var toppings = [];
+  var size=$('#size').val();
 
   $("input:checkbox[name=toppings]:checked").each(function(){
     var topping = $(this).val();
@@ -46,6 +49,8 @@ Pizza.prototype.setCost = function() {
 }
 
 $(document).ready(function() {
+
+    showCost();
     $("#orderForm").submit(function(event) {
       event.preventDefault();
       if ($('#size').val()!=""){
@@ -59,8 +64,9 @@ $(document).ready(function() {
       //  $("#pizzaNumber").append(pizzaNumber);
         $("#cartDisplay").append("<li>Pizza "+pizzaNumber+"<br>Size: "+item.size+"<br>Toppings:"+item.toppings+ "<br>Cost: $"+item.cost+"</li>");
         pizzaNumber++;
-        // setCartTotal();
+
       });
+      showCost();
 
     });
 });
