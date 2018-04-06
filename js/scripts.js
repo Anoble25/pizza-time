@@ -19,7 +19,7 @@ function clearCart(){
   showCost();
   $("#cartDisplay").text("");
 }
-//Please don't copy my code
+
 
 Pizza.prototype.setCost = function() {
   cost=0;
@@ -62,6 +62,7 @@ $(document).ready(function() {
       if ($('#size').val()!=""){
         buildPizza();
         console.log(cart);
+        document.getElementById("orderForm").reset();b
       } else{}
 
       $("#cartDisplay").text("");
@@ -71,7 +72,7 @@ $(document).ready(function() {
         pizzaNumber++;
       });
       showCost();
-      document.getElementById("orderForm").reset();
+
     });
 
     $("#clearCart").click(function(){
