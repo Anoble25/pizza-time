@@ -1,32 +1,40 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <link rel="icon" href="img/icon.png">
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script src="js/jquery-3.3.1.js"></script>
-    <script src="js/scripts.js"></script>
-    <meta charset="utf-8">
-    <title>Pizza Time</title>
-  </head>
-  <body>
-    <div class="jumbotron">
-      <h2>Pizza Time</h2>
-      <h5>You want a pizza, right? What kind?</h4>
+<head>
+  <link rel="icon" href="img/icon.png">
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.3.1.js"></script>
+  <script src="js/scripts.js"></script>
+  <meta charset="utf-8">
+  <title>Pizza Time</title>
+</head>
+<body>
+  <div class="jumbotron">
+    <h2>Pizza Time</h2>
+    <h5>You want a pizza, right? What kind?</h4>
     </div>
+    <h3>Choose pizza size: </h3>
     <select id=size class="form-control form-control-sm">
-      <option value="">Choose an option</option>
-      <option value="A">Small</option>
-      <option value="B">Medium</option>
-      <option value="C">Large</option>
-      <option value="D">Extra Large</option>
+      <option value="">Select size</option>
+      <option value="A">Small ($8)</option>
+      <option value="B">Medium ($12)</option>
+      <option value="C">Large ($14)</option>
+      <option value="D">Extra Large ($16)</option>
     </select>
-    <select id=toppings class="form-control form-control-sm">
-      <option value="">Choose an option</option>
-      <option value="A">Pepperoni</option>
-      <option value="B"></option>
-      <option value="C">I don't care about working at Facebook or Microsoft</option>
-      <option value="D">I'm not sure</option>
-    </select>
+    <div class="form-check">
+      <h3>Choose toppings: (+$1 for each topping)</h3>
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">Pepperoni</label>
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">Pineapple</label>
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">Sausage</label>
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">Extra Cheese</label>
+    </div>
+
+    <button id="addToCart" type="submit" class = "btn-xl" name="button">Add to cart</button>
+
   </body>
 </html>
