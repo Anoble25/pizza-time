@@ -13,6 +13,12 @@ function showCost(){
   });
   $("#cartTotal").text(runningTotal);
 }
+
+function clearCart(){
+  cart=[];
+  showCost();
+  $("#cartDisplay").text("");
+}
 //Justin please don't copy my code
 
 Pizza.prototype.setCost = function() {
@@ -67,6 +73,10 @@ $(document).ready(function() {
 
       });
       showCost();
+      document.getElementById("orderForm").reset();
+    });
 
+    $("#clearCart").click(function(){
+      clearCart();
     });
 });

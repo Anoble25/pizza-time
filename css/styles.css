@@ -14,6 +14,7 @@ html{
   background-attachment: fixed;
   text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000;
   max-height: 190px;
+  border-bottom: 4px solid black;
 }
 body{
   color:white;
@@ -21,11 +22,16 @@ body{
   background-size:cover;
   background-position: center center;
   background-attachment: fixed;
+
 }
 
 #addToCart{
   color:black;
 }
+#clearCart{
+  color:black;
+}
+
 li{
   float:left;
   padding-left:30px;
