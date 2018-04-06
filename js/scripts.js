@@ -9,6 +9,8 @@ function buildPizza(){
   var toppings = [];
   var size=$('#size').val();
 
+//Justin please don't copy my code
+
   $("input:checkbox[name=toppings]:checked").each(function(){
     var topping = $(this).val();
     toppings.push(topping);
@@ -18,12 +20,12 @@ function buildPizza(){
   cart.push(pizza1);
 }
 
-
 $(document).ready(function() {
-
-  $("#addToCart").click(function(){
-    buildPizza();
-    console.log(cart)
-  });
-
+    $("#orderForm").submit(function(event) {
+      event.preventDefault();
+      if ($('#size').val()!=""){
+        buildPizza();
+        console.log(cart);
+      } else{}
+    });
 });
