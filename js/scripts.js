@@ -62,7 +62,7 @@ $(document).ready(function() {
       if ($('#size').val()!=""){
         buildPizza();
         console.log(cart);
-        document.getElementById("orderForm").reset();b
+        document.getElementById("orderForm").reset();
       } else{}
 
       $("#cartDisplay").text("");
