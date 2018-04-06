@@ -49,5 +49,16 @@ $(document).ready(function() {
         buildPizza();
         console.log(cart);
       } else{}
+
+      $("#cartDisplay").text("");
+      var pizzaNumber=1;
+      cart.forEach(function(item){
+      //  $("#pizzaNumber").append(pizzaNumber);
+        $("#cartDisplay").append("<li>Pizza "+pizzaNumber+"<br>Size: "+item.size+"<br>Toppings:"+item.toppings+ "<br>Cost: $"+item.cost+"</li>");
+        pizzaNumber++;
+
+
+      });
+
     });
 });
