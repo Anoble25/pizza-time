@@ -19,7 +19,7 @@ function clearCart(){
   showCost();
   $("#cartDisplay").text("");
 }
-//Justin please don't copy my code
+//Please don't copy my code
 
 Pizza.prototype.setCost = function() {
   cost=0;
@@ -67,10 +67,8 @@ $(document).ready(function() {
       $("#cartDisplay").text("");
       var pizzaNumber=1;
       cart.forEach(function(item){
-      //  $("#pizzaNumber").append(pizzaNumber);
         $("#cartDisplay").append("<li>Pizza "+pizzaNumber+"<br>Size: "+item.size+"<br>Toppings:"+item.toppings+ "<br>Cost: $"+item.cost+"</li>");
         pizzaNumber++;
-
       });
       showCost();
       document.getElementById("orderForm").reset();

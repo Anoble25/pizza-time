@@ -6,10 +6,10 @@
 
 ## Description
 
-#### _A website for a pizza company where a user can choose one or more individual toppings (cheese, pepperoni, artichoke, anchovy, etc) and a size to order a pizza and see the final cost._
+#### _A website for a fictional pizza company where a user can choose one or more individual toppings (cheese, pepperoni, artichoke, anchovy, etc) and a size to order a pizza and see the final cost._
 
 ## Specifications
-*
+* The website gets user input for toppings and pizza size. It then calculates a user's total cost of a user's order displays it in a user's cart along with a list of all pizzas, their cost, and toppings. Users can add multiple pizzas to their cart.
 
 ## Setup
 
